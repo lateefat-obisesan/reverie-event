@@ -1,1 +1,11 @@
+@charset 'utf-8';
 @import"./reset.css";
+
+body {
+    font-family: "Montserrat", "Playfair";
+}
+
+.container{
+    width:min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
