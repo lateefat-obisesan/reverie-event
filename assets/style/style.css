@@ -1,8 +1,11 @@
-@charset 'utf-8';
+@charset "utf-8";
 @import"./reset.css";
 
 body {
-    font-family: "Montserrat", "Playfair";
+    font-family: "Playfair", "Montserrat";
+    font-size: 18;
+    background-color: #CFC7D9;
+    color: #fff;
 }
 
 .container{
