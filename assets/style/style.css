@@ -35,7 +35,8 @@ header {
     margin-bottom: 10px;
 }
 
-a {
+a,
+#login-btn {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
@@ -44,13 +45,17 @@ a {
     transition: transform 0.3s ease-in-out;
 }
 
-a:hover {
+a:hover,
+#login-btn:hover {
     transform: translateY(-3px);
      color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     
 }
 
-
+#login-btn {
+    background-color: transparent;
+    margin-bottom: 10px;
+}
 
 
