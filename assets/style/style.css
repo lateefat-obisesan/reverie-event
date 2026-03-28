@@ -36,7 +36,7 @@ header {
 }
 
 a,
-#login-btn {
+#login-menu-btn {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
@@ -46,16 +46,20 @@ a,
 }
 
 a:hover,
-#login-btn:hover {
+#login-menu-btn:hover {
     transform: translateY(-3px);
      color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     
 }
 
-#login-btn {
+#login-menu-btn{
     background-color: transparent;
     margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
 }
 
 #login-modal {
