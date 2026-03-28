@@ -4,7 +4,8 @@
 body {
     font-family: "Playfair", "Montserrat";
     font-size: 18;
-    background-color: #CFC7D9;
+    /*background-color: #CFC7D9;*/
+    background: linear-gradient(to bottom, #93879d, #c7b9d6); 
     color: #fff;
 }
 
@@ -12,3 +13,42 @@ body {
     width:min(100% - 30px, 1080px);
     margin-inline: auto;
 }
+
+header {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*align-items: flex-end;*/
+    gap: 250px;
+    /*background: linear-gradient(to bottom, #796f82, #c7b9d6); */
+    background-color: transparent;  
+}
+
+#header-logo {
+    margin-left: 60px;
+}
+
+#header-menu {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #e7e6e9;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover {
+    transform: translateY(-3px);
+     color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    
+}
+
+
