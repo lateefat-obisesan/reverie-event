@@ -118,26 +118,30 @@ a:hover,
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-
-
-/*FOOTER STYLES*/
-body {
-    min-height: 100svh;
-    display: flex;
-    flex-direction: column;
-}
-
 main {
     flex: 1;
 }
 
 .quote-it {
-    text-align: center;
-    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+    font-size: 1.7rem;
     font-style: italic;
-    font-size: 2.2rem;
-    color: #fcfcfc;
+    letter-spacing: 1px;
 }
+
+/* Adds the thin lines on the sides of the quote */
+.quote-it::before, .quote-it::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 100px;
+}
+
 
 /* --- SERVICES OVERVIEW --- */
 #services-overview {
@@ -189,7 +193,8 @@ main {
     grid-column: span 2;
     text-align: center;
     padding: 60px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(81, 38, 104, 0);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -309,16 +314,35 @@ main {
 
 /* --- BACK TO TOP LINK --- */
 .footer-top {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
 }
 
-.footer-top a p {
-    font-size: 1.2rem;
-    color: #6a6a71;
+.footer-top a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: rgba(120, 15, 128, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%; 
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-top p {
+    font-size: 1.1rem; 
+    color: #fff;
+    text-align: center;
+    margin: 0;
     text-transform: uppercase;
-    letter-spacing: 1px;
+}
+
+.footer-top a:hover {
+    background: #675a70;
 }
 
 
