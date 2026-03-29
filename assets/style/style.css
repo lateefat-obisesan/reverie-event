@@ -127,7 +127,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 40px 0;
+    padding: 20px 0;
     font-size: 1.7rem;
     font-style: italic;
     letter-spacing: 1px;
@@ -151,7 +151,8 @@ main {
 .section-title {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     letter-spacing: 2px;
 }
 
@@ -188,14 +189,15 @@ main {
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
-/* --- CONSULTATION BOX --- */
+/* CONSULTATION */
 .consult {
-    grid-column: span 2;
+    grid-column: span 4;
     text-align: center;
-    padding: 60px;
-    background: rgba(81, 38, 104, 0);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 50px;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle matching border */
     border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Lighter shadow for cleaner look */
     margin-top: 20px;
 }
 
@@ -215,8 +217,10 @@ main {
 
 /* GALLERY */
 #scrolling-gallery {
-    margin: 80px 0;
+    margin: 80px 0 20px 0;
+    margin-bottom: 20px;
     overflow: hidden;
+    width: 100%;
 }
 
 .gallery {
@@ -268,7 +272,9 @@ main {
 
 /* TESTIMONIES */
 #testimonies {
-    padding: 80px 0;
+   padding-top: 20px; /* Reduced from 80px to 20px */
+    padding-bottom: 80px;
+    width: 100%;
 }
 
 .testimony-title {
@@ -282,14 +288,19 @@ main {
     gap: 20px;
     overflow-x: auto;
     padding-bottom: 30px;
+    scrollbar-width: none; /* Hides the long line */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .testimony-card {
     position: relative;
-    min-width: 400px;
+    width: 400px;
     height: 500px;
     border-radius: 8px;
     overflow: hidden;
+    scroll-snap-align: start;
+    flex-shrink: 0; /* Prevents cards from squeezing together */
 }
 
 .testimony-card img {
@@ -341,6 +352,34 @@ main {
 .see:hover {
     background: #fff;
     color: #675a70;
+}
+
+.testimony-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.testimony-nav .nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.testimony-nav .nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
 }
 
 .footer-top {

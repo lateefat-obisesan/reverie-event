@@ -5,6 +5,9 @@ const loginModal = document.getElementById("login-modal");
 const gallery = document.querySelector('.gallery');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
+const testimonyContainer = document.querySelector('.testimony-container');
+const testimonyPrev = document.getElementById('testimonyPrev');
+const testimonyNext = document.getElementById('testimonyNext');
 
 loginBtn.addEventListener("click", () => {
     loginModal.classList.toggle("hidden");
@@ -23,6 +26,23 @@ nextBtn.addEventListener('click', () => {
 prevBtn.addEventListener('click', () => {
     gallery.scrollBy({
         left: -scrollAmount,
+        behavior: 'smooth'
+    });
+});
+
+// 400px (card width) + 20px (gap) = 420px
+const testimonyScrollAmount = 420; 
+
+testimonyNext.addEventListener('click', () => {
+    testimonyContainer.scrollBy({
+        left: testimonyScrollAmount,
+        behavior: 'smooth'
+    });
+});
+
+testimonyPrev.addEventListener('click', () => {
+    testimonyContainer.scrollBy({
+        left: -testimonyScrollAmount,
         behavior: 'smooth'
     });
 });
