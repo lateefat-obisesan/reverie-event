@@ -144,6 +144,13 @@ footer {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.footer-copy {
+    margin-top: 10px;
+}
+
+#photos-by {
+    font-style: italic;
+}
 
 .slogan {
     display:flex;
@@ -160,4 +167,20 @@ footer {
 
 .footer-text {
     font-size: 1.8rem;
+}
+
+#follow-us {
+    font-size: 2rem;
+    margin-left: 23px;
+}
+.social-btn {
+    font-size: 3rem;
+    color: #6a6a71;
+}
+
+#social-media-btns {
+    display:flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
 }
