@@ -56,6 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
             slides[index].classList.remove("active");
             index = (index + 1) % slides.length;
             slides[index].classList.add("active");
-        }, 4000);
+        }, 2000);
     }
 });
