@@ -2,11 +2,17 @@
 @import"./reset.css";
 
 body {
+     min-height: 100svh;
+    display: flex;
+    flex-direction: column;
     font-family: "Playfair", "Montserrat";
     font-size: 18;
-    /*background-color: #CFC7D9;*/
     background: linear-gradient(to bottom, #93879d, #c7b9d6); 
     color: #fff;
+}
+
+main {
+    flex: 1;
 }
 
 .container{
@@ -19,7 +25,6 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /*align-items: flex-end;*/
     gap: 250px;
     /*background: linear-gradient(to bottom, #796f82, #c7b9d6); */
     background-color: transparent;  
@@ -111,7 +116,8 @@ a:hover,
     transition: 0.3s ease-in-out;
 }
 
-#login-form button:hover {
+#login-form button:hover,
+#know-more-btn {
     background-color: #5c4c6e;
     color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
@@ -141,12 +147,13 @@ a:hover,
     display: flex;
     align-items: center;
     gap: 50px;
-    /*background: rgba(255, 255, 255, 0.12);*/
-    background: rgba(71, 70, 70, 0.25);
-    border-radius: 8px;
+    background-color:rgba(0,0,0,0.2);
+    border-radius: 5px;
     padding: 50px 60px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
+
+
 
 
 #about-image {
@@ -170,17 +177,20 @@ a:hover,
     letter-spacing: 0.2px;
 }
 
-
-
-body {
-    min-height: 100svh;
+.know-more-container {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+#know-more-btn {
+    display: flex;
+    justify-content: center;
+    background-color:  #675a70;
+    max-width: 120px;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
 
-main {
-    flex: 1;
-}
 
 footer {
     display: flex;
