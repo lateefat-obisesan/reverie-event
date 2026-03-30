@@ -138,21 +138,28 @@
                     <button class="nav-btn" id="testimonyNext">&#10095;</button>
                 </div>
             </section>
-            <section>
-                <h2>Contact Us</h2>
-                <form>
-                    <label>Full Name:</label>
-                    <input type="text">
-                    <label>Email:</label>
-                    <input type="email">
-                    <label>Event type:</label>
-                    <select>
-
-                    </select>
-                    <label>Message</label>
-                    <textarea></textarea>
-                    <input type="submit" value="Submit Request">
-                </form>
+            <section id="contact">
+                <h2 class="contact-title">Contact Us</h2>
+                <div class="contact-container">
+                    <form>
+                        <div>
+                            <label for="nameInput">Full Name:</label>
+                            <input type="text" id="nameInput">
+                            <label for="emailInput">Email:</label>
+                            <input type="email" id="emailInput">
+                            <label for="eventSelect">Event type:</label>
+                            <select id="eventSelect">
+                                <option>Wedding</option>
+                                <option>Formal</option>
+                                <option>Social</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <label for="messageInput">Message</label>
+                        <textarea id="messageInput"></textarea>
+                        <input type="submit" value="Submit Request">
+                    </form>
+                </div>
             </section>
         </main>
         <footer>
