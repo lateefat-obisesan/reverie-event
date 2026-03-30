@@ -145,32 +145,51 @@ main {
 
 /* --- SERVICES OVERVIEW --- */
 #services-overview {
-    padding: 40px 0;
+    padding: 100px 40px;
+    background: transparent;
 }
 
 .section-title {
     text-align: center;
     font-size: 3rem;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
+    margin-top: -20px; /* Pulls the title closer to the quote line */
+    margin-bottom: 50px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto; 
 }
 
 .service-col {
-    position: relative;
+    background: rgba(255, 255, 255, 0.8);
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 12px;
+    transition:all 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.service-col a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    flex-direction: column;
+    height: 100%;
 }
 
 .service-col img {
     width: 100%;
-    height: 400px;
+    height: 320px;
     object-fit: cover;
     display: block;
     transition: transform 0.5s ease;
@@ -181,29 +200,33 @@ main {
 }
 
 .service-col h3 {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: #fff;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    font-family: "Montserrat";
+    text-align: center;
 }
 
 /* CONSULTATION */
 .consult {
-    grid-column: span 4;
     text-align: center;
     padding: 50px;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle matching border */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Lighter shadow for cleaner look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
     margin-top: 20px;
 }
 
 .consult h3 {
     font-size: 2.8rem;
     margin-bottom: 15px;
+}
+
+.consult p {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
 }
 
 .consult a {
@@ -213,6 +236,11 @@ main {
     background-color: #675a70;
     border-radius: 5px;
     font-size: 1.6rem;
+}
+
+.consult a:hover {
+    background-color: #5c4c6e;
+    transform: scale(1.05);
 }
 
 /* GALLERY */
