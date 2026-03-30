@@ -513,6 +513,7 @@ footer {
     height: 500px;
     position: relative;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .slide {
