@@ -5,11 +5,64 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="authors" content="Group-4">
         <meta name="description" content="Event Planner">
-        <meta name="keywords" content="html, css, web, web development, javascript,">
+        <meta name="keywords" content="html, css, web, web development, javascript">
         <link rel="icon" href="./assets/media/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./assets/style/style.css" media="all">
-         <title>Reverie's Services</title>
+        <script src="./assets/scripts/script.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap">
+         <title>Reverie Event Planning</title>
     </head>
     <body>
+        <header>
+            <img class="logo" id="header-logo" src="./assets/media/reverie-logo-header.png" alt="Reverie's logo">
+            <div class="menu">
+                <nav id="header-menu">
+                    <a href="./">About Us</a>
+                    <a href="./services.html">Our Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact Us</a>
+                </nav> 
+            </div>
+            <div id="login">
+                 <button id="login-menu-btn">Log in</button>
+            </div>
+            <div id="login-modal" class="hidden">
+                <form id="login-form">
+                    <label for="user">Username</label>
+                    <input id="user" type="text" required>
+                    <label for="pass">Password</label>
+                    <input id="pass" type="password" required>
+                    <button type="submit">Log in</button>
+                </form>
+            </div>
+        </header>
+        <div class="container">
+            <main>
+            </main>
+            <footer>
+                <div class="footer-top">
+                    <a href="#"><p>Back to Top</p> </a>
+                </div>
+                <div class="footer-copy">
+                    <p id="photos-by">Photos by  Unsplash &amp; Friends</p>
+                    <p class="footer-copy">&copy; <span id="year"></span> All rights reserved.</p>
+                </div>         
+                <div class="slogan">
+                    <h2 id="footer-title">Reverie Event Planning</h2>
+                    <p class="footer-text">Let your dreams become unforgettable moments </p>
+                </div>
+                <div class="social-media">
+                    <h3 id="follow-us">Follow Us</h3>
+                    <div id="social-media-btns">
+                        <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>           
+            </footer>
+        </div>
     </body>
 </html>
