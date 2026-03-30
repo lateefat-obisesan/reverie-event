@@ -413,9 +413,14 @@ main {
     border-color: #ffffff;
 }
 
-/* Contact Us */
-#contact {
+/* Contact Us, Reach Out */
+#contact, #follow {
     margin-bottom: 50px;
+}
+
+#follow {
+    padding-top: 40px;
+    font-size: 2rem;
 }
 
 .contact-title {
@@ -424,7 +429,11 @@ main {
     margin-bottom: 30px;
 }
 
-.contact-container {
+.company-info {
+    text-align: center;
+}
+
+.box-container {
     font-size: 1.7rem;
     text-align: center;
     padding: 50px;
