@@ -412,6 +412,10 @@ main {
 }
 
 /* Contact Us */
+#contact {
+    margin-bottom: 50px;
+}
+
 .contact-title {
     text-align: center;
     font-size: 2.8rem;
@@ -433,10 +437,12 @@ main {
     justify-content: space-around;
     margin-bottom: 15px;
     input {
+        background-color: #e7e6e9;
         border-radius: 5px;
         padding: 2px 8px;
     }
     select {
+        background-color: #e7e6e9;
         border-radius: 5px;
         padding: 5px;
     }
@@ -456,9 +462,10 @@ main {
         height: 25rem;
         border-radius: 5px;
         padding: 10px;
+        background-color: #e7e6e9;
     }
     .submit {
-        margin-top: 20px;
+        margin-top: 50px;
         padding: 12px 30px;
         background-color: #675a70;
         border-radius: 5px;
@@ -467,8 +474,10 @@ main {
         color: #e7e6e9;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         transition: transform 0.3s ease-in-out;
+        padding: 12px 30px;
+        align-self: center;
     }
-    input:hover {
+    .submit:hover {
         background-color: #5c4c6e;
     }
 }
