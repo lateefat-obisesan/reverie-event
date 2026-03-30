@@ -4,7 +4,6 @@
 body {
     font-family: "Playfair", "Montserrat";
     font-size: 18;
-    /*background-color: #CFC7D9;*/
     background: linear-gradient(to bottom, #93879d, #c7b9d6); 
     color: #fff;
 }
@@ -19,9 +18,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /*align-items: flex-end;*/
     gap: 250px;
-    /*background: linear-gradient(to bottom, #796f82, #c7b9d6); */
     background-color: transparent;  
 }
 
