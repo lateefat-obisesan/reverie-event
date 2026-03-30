@@ -560,3 +560,49 @@ footer {
     margin-bottom: 15px;
     margin-top: 5px;
 }
+
+
+.hero-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.hero-image-box {
+    width: 80%;
+    max-width: 1100px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.hero-text-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(80, 80, 80, 0.45);
+    padding: 20px 30px;
+    text-align: center;
+    width: 50%;
+}
+
+.hero-text-bar h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
