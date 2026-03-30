@@ -13,9 +13,6 @@ body {
     margin-inline: auto;
 }
 
-/* =========================
-   HEADER
-   ========================= */
 
 header {
     display: flex;
@@ -121,10 +118,6 @@ main {
     flex: 1;
 }
 
-/* =========================
-   ABOUT BANNER
-   ========================= */
-
 .about-banner {
     background-image: url("../media/about-banner.jpg");
     background-size: cover;
@@ -157,9 +150,6 @@ main {
     color: #fff;
 }
 
-/* =========================
-   ABOUT GENERAL
-   ========================= */
 
 .about-section {
     padding: 70px 20px;
@@ -186,17 +176,11 @@ main {
     color: #fff;
 }
 
-/* =========================
-   OUR STORY
-   ========================= */
 
 .about-story {
     padding: 70px 20px 40px 20px;
 }
 
-/* =========================
-   WHY CHOOSE US
-   ========================= */
 
 .about-why {
     padding: 40px 20px 70px 20px;
@@ -238,9 +222,6 @@ main {
     color: #fff;
 }
 
-/* =========================
-   ABOUT IMAGE SECTION
-   ========================= */
 
 .about-image-section {
     padding: 20px 20px 60px 20px;
@@ -273,9 +254,6 @@ main {
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
-/* =========================
-   CTA SECTION
-   ========================= */
 
 .about-cta {
     padding: 30px 20px 80px 20px;
@@ -302,9 +280,6 @@ main {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-/* =========================
-   FOOTER TOP BUTTON
-   ========================= */
 
 .footer-top {
     position: fixed;
@@ -338,9 +313,6 @@ main {
     background: #675a70;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
 
 footer {
     display: flex;
@@ -424,14 +396,6 @@ footer {
     }
 
     .about-banner-content p {
-        font-size: 1.4rem;
-    }
-
-    .about-container h2 {
-        font-size: 2.3rem;
-    }
-
-    .about-container p {
         font-size: 1.4rem;
     }
 
