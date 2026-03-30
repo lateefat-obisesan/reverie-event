@@ -210,41 +210,6 @@ main {
 .service-col:hover img {
     transform: scale(1.08);
 }
-/* CONSULTATION */
-.consult {
-    text-align: center;
-    padding: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.2); 
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
-
-.consult h3 {
-    font-size: 2.8rem;
-    margin-bottom: 15px;
-}
-
-.consult p {
-    font-size: 1.6rem;
-    margin-bottom: 25px;
-}
-
-.consult a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background-color: #675a70;
-    border-radius: 5px;
-    font-size: 1.6rem;
-}
-
-.consult a:hover {
-    background-color: #5c4c6e;
-    transform: scale(1.05);
-}
-
 /* GALLERY */
 #scrolling-gallery {
     margin: 80px 0 20px 0;
@@ -414,7 +379,7 @@ main {
     border-color: #ffffff;
 }
 
-/* FINAL CONSULTATION*/
+/*CONSULTATION */
 .consult {
     padding: 120px 5%;
     text-align: center;
