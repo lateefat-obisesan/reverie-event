@@ -3,7 +3,6 @@
 
 body {
     font-family: "Playfair", "Montserrat";
-    font-size: 18;
     background: linear-gradient(to bottom, #93879d, #c7b9d6); 
     color: #fff;
 }
@@ -518,12 +517,18 @@ a:hover,
 
 /* Contact Us */
 #contact {
+    background: rgba(0,0,0,0.2);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    border-radius: 5px;
     margin-bottom: 50px;
+    padding: 50px;
+    font-size: 1.8rem;
 }
 
 #follow {
     padding-top: 40px;
     font-size: 2rem;
+    margin-bottom: 40px;
 }
 
 .contact-title {
@@ -534,6 +539,9 @@ a:hover,
 
 .company-info {
     text-align: center;
+    p, div {
+        margin-bottom: 10px;
+    }
 }
 
 .box-container {
@@ -580,19 +588,24 @@ a:hover,
     }
     .submit {
         margin-top: 50px;
-        padding: 12px 30px;
-        background-color: #675a70;
-        border-radius: 5px;
-        font-size: 2rem;
-        font-weight: 600;
-        color: #e7e6e9;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        transition: transform 0.3s ease-in-out;
-        padding: 12px 30px;
         align-self: center;
+        display: inline-block;
+        padding: 18px 45px;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 50px;
+        transition: 0.3s;
     }
     .submit:hover {
         background-color: #5c4c6e;
+        color: #fff;
+        transform: scale(1.05);
     }
 }
 
