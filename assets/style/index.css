@@ -524,6 +524,7 @@ a:hover,
 #follow {
     padding-top: 40px;
     font-size: 2rem;
+    margin-bottom: 40px;
 }
 
 .contact-title {
@@ -534,6 +535,9 @@ a:hover,
 
 .company-info {
     text-align: center;
+    p, div {
+        margin-bottom: 10px;
+    }
 }
 
 .box-container {
