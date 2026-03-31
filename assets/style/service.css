@@ -4,7 +4,6 @@
 body {
     font-family: "Playfair", "Montserrat";
     font-size: 18;
-    /*background-color: #CFC7D9;*/
     background: linear-gradient(to bottom, #93879d, #c7b9d6); 
     color: #fff;
 }
