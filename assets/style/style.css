@@ -2,18 +2,12 @@
 @import"./reset.css";
 
 body {
-     min-height: 100svh;
-    display: flex;
-    flex-direction: column;
     font-family: "Playfair", "Montserrat";
     font-size: 18;
     background: linear-gradient(to bottom, #93879d, #c7b9d6); 
     color: #fff;
 }
 
-main {
-    flex: 1;
-}
 
 .container{
     width:min(100% - 30px, 1080px);
