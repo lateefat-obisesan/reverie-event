@@ -752,28 +752,7 @@ footer {
         justify-content: center;
     }
 
-<<<<<<< HEAD:assets/style/index.css
     a, #login-menu-btn {
         font-size: 1.2rem;
     }
 }
-=======
-.hero-text-bar {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(80, 80, 80, 0.45);
-    padding: 20px 30px;
-    text-align: center;
-    width: 50%;
-}
-
-.hero-text-bar h1 {
-    color: white;
-    font-size: 22px;
-    font-weight: normal;
-    letter-spacing: 1px;
-}
-
->>>>>>> a396b3e (add styling to about section):assets/style/style.css
