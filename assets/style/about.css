@@ -3,7 +3,11 @@
 
 body {
     font-family: "Playfair", "Montserrat";
+<<<<<<< HEAD
     font-size: 18px;
+=======
+    font-size: 18;
+>>>>>>> a396b3e (add styling to about section)
     background: linear-gradient(to bottom, #93879d, #c7b9d6);
     color: #fff;
 }
@@ -13,6 +17,12 @@ body {
     margin-inline: auto;
 }
 
+<<<<<<< HEAD
+=======
+/* =========================
+   HEADER
+   ========================= */
+>>>>>>> a396b3e (add styling to about section)
 
 header {
     display: flex;
@@ -114,6 +124,17 @@ a:hover,
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
+<<<<<<< HEAD
+=======
+main {
+    flex: 1;
+}
+
+/* =========================
+   ABOUT BANNER
+   ========================= */
+
+>>>>>>> a396b3e (add styling to about section)
 .about-banner {
     background-image: url("../media/about-banner.jpg");
     background-size: cover;
@@ -124,6 +145,7 @@ a:hover,
     margin-top: 20px;
 }
 
+<<<<<<< HEAD
 .story-box {
     background: rgba(255, 255, 255, 0.08);
     padding: 35px;
@@ -138,6 +160,8 @@ a:hover,
     margin: 0 auto 15 px;
 }
 
+=======
+>>>>>>> a396b3e (add styling to about section)
 .about-banner-content {
     display: inline-block;
     background: rgba(80, 80, 80, 0.45);
@@ -147,7 +171,11 @@ a:hover,
 }
 
 .about-banner-content h1 {
+<<<<<<< HEAD
     font-size: 6rem;
+=======
+    font-size: 3rem;
+>>>>>>> a396b3e (add styling to about section)
     margin-bottom: 12px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -155,11 +183,21 @@ a:hover,
 }
 
 .about-banner-content p {
+<<<<<<< HEAD
     font-size: 1.9rem;
+=======
+    font-size: 1.6rem;
+>>>>>>> a396b3e (add styling to about section)
     line-height: 1.6;
     color: #fff;
 }
 
+<<<<<<< HEAD
+=======
+/* =========================
+   ABOUT GENERAL
+   ========================= */
+>>>>>>> a396b3e (add styling to about section)
 
 .about-section {
     padding: 70px 20px;
@@ -180,17 +218,33 @@ a:hover,
 }
 
 .about-container p {
+<<<<<<< HEAD
     font-size: 1.9rem;
+=======
+    font-size: 1.6rem;
+>>>>>>> a396b3e (add styling to about section)
     line-height: 1.8;
     margin-bottom: 18px;
     color: #fff;
 }
 
+<<<<<<< HEAD
+=======
+/* =========================
+   OUR STORY
+   ========================= */
+>>>>>>> a396b3e (add styling to about section)
 
 .about-story {
     padding: 70px 20px 40px 20px;
 }
 
+<<<<<<< HEAD
+=======
+/* =========================
+   WHY CHOOSE US
+   ========================= */
+>>>>>>> a396b3e (add styling to about section)
 
 .about-why {
     padding: 40px 20px 70px 20px;
@@ -219,19 +273,28 @@ a:hover,
 }
 
 .why-box h3 {
+<<<<<<< HEAD
     font-size: 2.0rem;
+=======
+    font-size: 1.8rem;
+>>>>>>> a396b3e (add styling to about section)
     margin-bottom: 12px;
     color: #fff;
     letter-spacing: 1px;
 }
 
 .why-box p {
+<<<<<<< HEAD
     font-size: 1.9rem;
+=======
+    font-size: 1.4rem;
+>>>>>>> a396b3e (add styling to about section)
     line-height: 1.6;
     margin-bottom: 0;
     color: #fff;
 }
 
+<<<<<<< HEAD
 .about-goals {
     padding: 80px 20px;
     text-align: center;
@@ -264,10 +327,34 @@ a:hover,
     background: rgba(255, 255, 255, 0.6);
     margin: 10px auto 25px;
 }
+=======
+/* =========================
+   ABOUT IMAGE SECTION
+   ========================= */
+
+.about-image-section {
+    padding: 20px 20px 60px 20px;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* =========================
+   VIDEO SECTION
+   ========================= */
+>>>>>>> a396b3e (add styling to about section)
 
 .about-video {
     padding: 30px 20px 70px 20px;
 }
+<<<<<<< HEAD
 .video-slider {
     display: flex;
     justify-content: center;
@@ -319,6 +406,21 @@ a:hover,
     background: rgba(80, 80, 80, 0.8);
 }
 
+=======
+
+.event-video {
+    width: 100%;
+    max-width: 850px;
+    display: block;
+    margin: 30px auto 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   CTA SECTION
+   ========================= */
+>>>>>>> a396b3e (add styling to about section)
 
 .about-cta {
     padding: 30px 20px 80px 20px;
@@ -345,7 +447,13 @@ a:hover,
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
+<<<<<<< HEAD
 
+=======
+/* =========================
+   FOOTER TOP BUTTON
+   ========================= */
+>>>>>>> a396b3e (add styling to about section)
 
 .footer-top {
     position: fixed;
@@ -379,6 +487,12 @@ a:hover,
     background: #675a70;
 }
 
+<<<<<<< HEAD
+=======
+/* =========================
+   FOOTER
+   ========================= */
+>>>>>>> a396b3e (add styling to about section)
 
 footer {
     display: flex;
@@ -435,6 +549,12 @@ footer {
     margin-top: 5px;
 }
 
+<<<<<<< HEAD
+=======
+/* =========================
+   RESPONSIVE
+   ========================= */
+>>>>>>> a396b3e (add styling to about section)
 
 @media (max-width: 1000px) {
     header {
@@ -448,6 +568,7 @@ footer {
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 600px) {
     .story-box {
         width: 100%;
@@ -471,6 +592,8 @@ footer {
     }
 }
 
+=======
+>>>>>>> a396b3e (add styling to about section)
 @media (max-width: 900px) {
     .about-banner-content {
         width: 85%;
@@ -574,4 +697,8 @@ footer {
     .about-image {
         height: 280px;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a396b3e (add styling to about section)
