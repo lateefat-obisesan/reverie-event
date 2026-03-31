@@ -20,3 +20,12 @@ The website highlights our services, philosophy, and design style through a clea
 
  
 ---
+
+## 🛠️ Technologies Used
+- HTML5  
+- CSS   
+- JavaScript  
+- Git & GitHub  
+- GitHub Pages 
+
+---
