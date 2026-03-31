@@ -60,7 +60,7 @@ a:hover,
     position: absolute;
     top: 110px; 
     right: 120px; 
-    background: rgba(157, 155, 155, 0.25);
+    background: rgb(157, 155, 155);
     border-radius: 10px;
     padding: 20px ;
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
@@ -368,7 +368,7 @@ a:hover,
 
 
 #scrolling-gallery {
-    margin: 120px 0px 60px;
+    margin: 120px 0px 40px;
 }
 
 .gallery {
@@ -422,7 +422,7 @@ a:hover,
 
 #testimonies {
     padding-top: 20px; 
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     width: 100%;
 }
 
