@@ -622,10 +622,10 @@ footer {
     margin-top: 5px;
 }
 
-/* --- TABLET BREAKPOINT (900px and below) --- */
+/* TABLET (900px and below) */
 @media (max-width: 900px) {
     header {
-        gap: 50px; /* Reduces the massive 250px gap */
+        gap: 50px; 
         justify-content: center;
     }
 
@@ -639,11 +639,18 @@ footer {
     }
 
     .service-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns look better on tablets than 3 */
+        grid-template-columns: repeat(2, 1fr); 
+        justify-content: center;
+    }
+
+    .service-col:last-child {
+        grid-column: span 2; 
+        justify-self: center; 
+        width: 50%;
     }
 
     .testimony-card {
-        width: calc(50% - 10px); /* 2 cards visible on tablet */
+        width: calc(50% - 10px); 
     }
     
     footer {
@@ -651,7 +658,7 @@ footer {
     }
 }
 
-/* --- MOBILE BREAKPOINT (600px and below) --- */
+/* MOBILE (600px and below) */
 @media screen and (max-width: 600px) {
     header {
         flex-direction: column;
