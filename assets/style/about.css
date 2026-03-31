@@ -3,7 +3,7 @@
 
 body {
     font-family: "Playfair", "Montserrat";
-    font-size: 18;
+    font-size: 18px;
     background: linear-gradient(to bottom, #93879d, #c7b9d6);
     color: #fff;
 }
@@ -114,10 +114,6 @@ a:hover,
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-main {
-    flex: 1;
-}
-
 .about-banner {
     background-image: url("../media/about-banner.jpg");
     background-size: cover;
@@ -126,6 +122,20 @@ main {
     padding: 120px 20px;
     text-align: center;
     margin-top: 20px;
+}
+
+.story-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 35px;
+    border-radius: 15px;
+    max-width: 950px;
+    margin: 0 auto;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.story-box p {
+    max-width: 700px;
+    margin: 0 auto 15 px;
 }
 
 .about-banner-content {
@@ -137,7 +147,7 @@ main {
 }
 
 .about-banner-content h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     margin-bottom: 12px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -145,7 +155,7 @@ main {
 }
 
 .about-banner-content p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     line-height: 1.6;
     color: #fff;
 }
@@ -170,7 +180,7 @@ main {
 }
 
 .about-container p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     line-height: 1.8;
     margin-bottom: 18px;
     color: #fff;
@@ -209,49 +219,104 @@ main {
 }
 
 .why-box h3 {
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     margin-bottom: 12px;
     color: #fff;
     letter-spacing: 1px;
 }
 
 .why-box p {
-    font-size: 1.4rem;
+    font-size: 1.9rem;
     line-height: 1.6;
     margin-bottom: 0;
     color: #fff;
 }
 
-
-.about-image-section {
-    padding: 20px 20px 60px 20px;
+.about-goals {
+    padding: 80px 20px;
+    text-align: center;
 }
 
-.about-image {
-    width: 100%;
-    max-width: 900px;
-    height: 500px;
-    object-fit: cover;
-    display: block;
+.about-goals-box {
+    max-width: 850px;
     margin: 0 auto;
-    border-radius: 10px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
-/* =========================
-   VIDEO SECTION
-   ========================= */
+.about-goals h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.about-goals p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.goals-line {
+    width: 70px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.6);
+    margin: 10px auto 25px;
+}
 
 .about-video {
     padding: 30px 20px 70px 20px;
 }
+.video-slider {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
 
-.event-video {
-    width: 100%;
-    max-width: 850px;
-    display: block;
-    margin: 30px auto 0 auto;
+.video-box {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.video-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.video-slide.active {
+    display: block;
+}
+
+.video-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 80px;
+    border: none;
+    background: rgba(80, 80, 80, 0.5);
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.video-btn:hover {
+    background: rgba(80, 80, 80, 0.8);
 }
 
 
@@ -279,6 +344,7 @@ main {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
+
 
 
 .footer-top {
@@ -369,9 +435,6 @@ footer {
     margin-top: 5px;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
 
 @media (max-width: 1000px) {
     header {
@@ -382,6 +445,29 @@ footer {
         gap: 80px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .story-box {
+        width: 100%;
+        padding: 25px 15px;
+    }
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap; 
+}
+
+.nav-links a {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .nav-links a {
+        font-size: 12px; 
     }
 }
 
