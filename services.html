@@ -5,11 +5,179 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="authors" content="Group-4">
         <meta name="description" content="Event Planner">
-        <meta name="keywords" content="html, css, web, web development, javascript,">
+        <meta name="keywords" content="html, css, web, web development, javascript">
         <link rel="icon" href="./assets/media/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="./assets/style/style.css" media="all">
-         <title>Reverie's Services</title>
+        <link rel="stylesheet" href="./assets/style/service.css" media="all">
+        <script src="./assets/scripts/script.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap">
+         <title>Reverie Event Planning</title>
     </head>
     <body>
+        <header>
+            <img class="logo" id="header-logo" src="./assets/media/reverie-logo-header.png" alt="Reverie's logo">
+            <div class="menu">
+                <nav id="header-menu">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="#scrolling-gallery">Gallery</a>
+                    <a href="#contact">Contact Us</a>
+                </nav> 
+            </div>
+            <div id="login">
+                 <button id="login-menu-btn">Log in</button>
+            </div>
+            <div id="login-modal" class="hidden">
+                <form id="login-form">
+                    <label for="user">Username</label>
+                    <input id="user" type="text" required>
+                    <label for="pass">Password</label>
+                    <input id="pass" type="password" required>
+                    <button type="submit">Log in</button>
+                </form>
+            </div>
+        </header>
+        <div class="container">
+            <main>
+                <section class="service-hero">
+                    <video autoplay muted loop id="hero-video">
+                        <source src="./assets/media/services-background.mp4" type="video/mp4">
+                    </video>
+                    <div class="hero-overlay">
+                        <h1>Transforming Visions into Masterpieces</h1>
+                        <p>Bespoke Event Design & Luxury Styling for Every Milestone</p>
+                    </div>
+                </section>
+                <section class="service-detail-container">
+                    <div class="detail-row">
+                        <div class="detail-img">
+                            <img src="./assets/media/service-1.jpg" alt="Luxury Wedding Styling">
+                        </div>
+                        <div class="detail-text">
+                            <h2>Luxury Wedding Design</h2>
+                            <p>Your wedding day is a once-in-a-lifetime story, and we are here to tell it through exquisite design. 
+                               We don't just "decorate"; we curate an atmosphere. Our wedding services include custom floral installations, 
+                               high-end table scapes, and full-room transformations.
+                            </p>
+                            <ul>
+                                <li>Custom Color Palette & Mood Board Creation</li>
+                                <li>Bespoke Ceremony Backdrops & Floral Arches</li>
+                                <li>Premium Linen, Tableware, and Centerpiece Selection</li>
+                                <li>On-site Styling & Aesthetic Coordination</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-img">
+                            <img src="./assets/media/service-2.jpg" alt="Corporate Event Setup">
+                        </div>
+                        <div class="detail-text">
+                            <h2>Corporate Excellence</h2>
+                            <p>Elevate your brand presence with sophisticated event styling that speaks to your company's identity. 
+                               From high-stakes gala dinners to creative product launches, we ensure your professional events leave a 
+                               lasting impression on stakeholders and clients alike.
+                            </p>
+                            <ul>
+                                <li>Brand-Integrated Decor & Color Matching</li>
+                                <li>Stage Design & VIP Lounge Layouts</li>
+                                <li>Gala Dinner & Award Ceremony Centerpieces</li>
+                                <li>Professional Setup and Rapid Teardown Services</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-img">
+                            <img src="./assets/media/service-3.jpg" alt="Social Event Decor">
+                        </div>
+                        <div class="detail-text">
+                            <h2>Social Celebrations</h2>
+                            <p>Life’s milestones deserve more than a standard setup. We bring the "wow" factor to your private celebrations. 
+                               Whether it’s an intimate garden party or a grand 50th birthday bash, our decor turns any venue into an extraordinary celebration spot.
+                            </p>
+                            <ul>
+                                <li>Milestone Birthday & Anniversary Styling</li>
+                                <li>Themed Party Decor & Prop Sourcing</li>
+                                <li>Intimate Private Dinner Table Styling</li>
+                                <li>Outdoor & Backyard Event Transformations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="more-services">
+                    <div class="section-header">
+                        <h2>Beyond the Pillars</h2>
+                        <p>Our creativity doesn't stop at three categories. If you have a vision, we have the tools to build it.</p>
+                    </div>
+                    <div class="services-list-grid">
+                        <div class="list-item">
+                            <h3>Holiday Decor</h3>
+                            <p>Full-scale seasonal transformations for residential and commercial spaces.</p>
+                        </div>
+                        <div class="list-item">
+                            <h3>Engagement Proposals</h3>
+                            <p>Romantic, secret setups designed for the perfect "Yes" moment.</p>
+                        </div>
+                        <div class="list-item">
+                            <h3>Themed Pop-ups</h3>
+                            <p>Unique, temporary installations for photo shoots or brand activations.</p>
+                        </div>
+                        <div class="list-item">
+                            <h3>Educational Workshops</h3>
+                            <p>Styling and decor masterclasses for aspiring event designers.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="why-choose-us">
+                    <div class="choose-container">
+                        <div class="choose-img">
+                            <img src="./assets/media/choose.jpg" alt="Why Choose Us">
+                        </div>
+                        <div class="choose-content">
+                            <h2>Why Partner With Us?</h2>
+                            <div class="reason-item">
+                                <h4>Unrivaled Attention to Detail</h4>
+                                <p>We believe the smallest details make the biggest difference. Every candle, stem, and napkin is placed with intention.</p>
+                            </div>
+                            <div class="reason-item">
+                                <h4>Stress-Free Management</h4>
+                                <p>You are the host, you should enjoy the party. We handle the entire aesthetic setup and teardown seamlessly.</p>
+                            </div>
+                            <div class="reason-item">
+                                <h4>Custom Bespoke Designs</h4>
+                                <p>We don't do "cookie-cutter." Every design is built from scratch based on your specific personality and goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="consult">
+                    <h2>Have an idea you'd like to share?</h2>
+                    <p>No matter how unique or grand your vision is, we are ready to bring it to life. Let's create something unforgettable together.</p>
+                    <a href="#contact">Book a Consultation</a>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <div class="footer-top">
+                <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-copy">
+                <p id="photos-by">Photos by  Unsplash &amp; Friends</p>
+                <p class="footer-copy">&copy; <span id="year"></span> All rights reserved.</p>                
+            </div>         
+            <div class="slogan">
+                <h2 id="footer-title">Reverie Event Planning</h2>
+                <p class="footer-text">Let your dreams become unforgettable moments </p>
+            </div>                
+            <div class="social-media">
+                <h3 id="follow-us">Follow Us</h3>
+                <div id="social-media-btns">
+                    <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>           
+        </footer>
     </body>
 </html>
