@@ -62,7 +62,7 @@ a:hover,
     position: absolute;
     top: 110px; 
     right: 120px; 
-    background: rgba(157, 155, 155, 0.25);
+    background: rgb(157, 155, 155);
     border-radius: 10px;
     padding: 20px ;
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
@@ -115,7 +115,7 @@ a:hover,
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-/*SERVICE-PAGE*/
+
 .service-hero {
     position: relative;
     height: 80vh; 
@@ -347,7 +347,7 @@ a:hover,
     margin-bottom: 30px;
 }
 
-/*CONSULTATION */
+
 .consult {
     padding: 120px 5%;
     text-align: center;

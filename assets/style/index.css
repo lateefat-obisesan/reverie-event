@@ -60,7 +60,7 @@ a:hover,
     position: absolute;
     top: 110px; 
     right: 120px; 
-    background: rgba(157, 155, 155, 0.25);
+    background: rgb(157, 155, 155);
     border-radius: 10px;
     padding: 20px ;
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
@@ -180,9 +180,9 @@ a:hover,
 }
 
 
-/* INDEX SERVICES  */
+
 #services-overview {
-    padding: 100px 20px;
+    padding: 80px 20px 60px;
     background: transparent;
 }
 
@@ -251,7 +251,7 @@ a:hover,
 
 
 #scrolling-gallery {
-    margin: 80px 0 20px 0;
+    margin: 60px 0;
     margin-bottom: 20px;
     overflow: hidden;
     width: 100%;
@@ -259,7 +259,7 @@ a:hover,
 
 #about {
     max-width: 1080px;
-    margin: 20px 0px 100px;
+    margin: 60px 0;
     padding: 0 20px;
 }
 
@@ -267,7 +267,7 @@ a:hover,
     font-size: 3rem;
     font-style: italic;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     color: #fff;
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.35);
@@ -317,11 +317,59 @@ a:hover,
     display: flex;
     justify-content: center;
     background-color:  #675a70;
-    max-width: 120px;
-    border-radius: 10px;
-    padding: 5px 10px;
+    max-width: 150px;
+    border-radius: 50px;
+    padding: 10px 25px;
 }
 
+
+.consult {
+    padding: 100px 5%;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+    margin: 120px 0 60px;
+    border-radius: 5px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.consult h2 {
+    font-family: 'Playfair Display';
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.consult p {
+    font-size: 1.6rem;
+    color: #fff;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.consult a {
+    display: inline-block;
+    padding: 18px 45px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.consult a:hover {
+    background: #5c4c6e;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+#scrolling-gallery {
+    margin: 120px 0px 40px;
+}
 
 .gallery {
     display: flex;
@@ -363,6 +411,7 @@ a:hover,
     cursor: pointer;
     transition: all 0.3s ease;
     user-select: none; /* Prevents the arrow text from being highlighted when the user clicks the buttons multiple times. */
+    margin-bottom: 50px;
 }
 
 .nav-btn:hover {
@@ -370,10 +419,10 @@ a:hover,
     border-color: #ffffff;
 }
 
-/* TESTIMONIES */
+
 #testimonies {
     padding-top: 20px; 
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     width: 100%;
 }
 
@@ -470,51 +519,7 @@ a:hover,
     border-color: #ffffff;
 }
 
-/*CONSULTATION */
-.consult {
-    padding: 120px 5%;
-    text-align: center;
-    background: rgba(0,0,0,0.2);
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-}
 
-.consult h2 {
-    font-family: 'Playfair Display';
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.consult p {
-    font-size: 1.6rem;
-    color: #fff;
-    max-width: 700px;
-    margin: 0 auto 40px;
-}
-
-.consult a {
-    display: inline-block;
-    padding: 18px 45px;
-    background: #fff;
-    color: #000;
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 50px;
-    transition: 0.3s;
-}
-
-.consult a:hover {
-    background: #5c4c6e;
-    color: #fff;
-    transform: scale(1.05);
-}
-
-/* Contact Us */
 #contact {
     background: rgba(0,0,0,0.2);
     box-shadow: 0 8px 24px rgba(0,0,0,0.25);
@@ -648,6 +653,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 200px;
+    margin-top:60px;
     margin-bottom: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     padding-top: 60px;
@@ -698,7 +704,7 @@ footer {
     margin-top: 5px;
 }
 
-/* TABLET (900px and below) */
+
 @media (max-width: 900px) {
     header {
         gap: 50px; 
@@ -734,7 +740,7 @@ footer {
     }
 }
 
-/* MOBILE (600px and below) */
+
 @media screen and (max-width: 600px) {
     header {
         flex-direction: column;
