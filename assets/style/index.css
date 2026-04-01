@@ -788,22 +788,23 @@ footer {
     }
 
     .hero-text-bar {
-        width: 90%; 
+        width: 95%; 
     }
 
     .hero-text-bar h1 {
         font-size: 16px; 
-        white-space: nowrap; /* Prevents text from wrapping to a second line */
+        white-space: nowrap; 
     }
 
-  .know-more-btn {
-    width: 100%; 
-    padding: 18px 0;
-    font-size: 1.2rem; 
-    display: block;
-    text-align: center;
-  }
-
+    #know-more-btn {
+        display: flex;
+        width: 50%; 
+        max-width: 50% !important; 
+        padding: 20px 0;
+        font-size: 1.6rem; 
+        justify-content: center;
+        margin: 20px 0;
+    }
 
     .gallery img, 
     .testimony-card,
@@ -816,17 +817,20 @@ footer {
         width: 100%; 
     }
 
-    
-    .contact-form-container { 
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
+    .contact-info {
+        flex-direction: column; 
+        gap: 10px;
+    }
 
-  .contact-form-container input,
-  .contact-form-container select {
-    width: 100% !important;
-    margin-bottom: 15px;
-  }
+    .contact-info input,
+    .contact-info select,
+    #messageInput {
+        width: 100% !important;
+        margin-bottom: 15px;
+        box-sizing: border-box; 
+    }
 
+    .message label {
+        text-align: center; 
+    }
 }
