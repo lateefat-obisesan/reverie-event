@@ -1,10 +1,6 @@
 @charset "utf-8";
 @import "./common.css";
 
-main {
-    flex: 1;
-}
-
 .about-banner {
     background-image: url("../media/about-banner.jpg");
     background-size: cover;
