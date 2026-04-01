@@ -7,7 +7,6 @@ Reverie Event Planning is a thoughtfully crafted website designed to reflect the
 The website highlights our services, philosophy, and design style through a clean, elegant layout. Visitors can explore our story, browse the services we offer, view curated galleries and testimonials, and connect with us through a validated contact form. Every section is built to mirror the calm, intentional, and creative spirit that defines Reverie Event Planning.
 
 
-
 ---
 
 ## ✨ Main Features
@@ -29,3 +28,6 @@ The website highlights our services, philosophy, and design style through a clea
 - GitHub Pages 
 
 ---
+
+## 🚀 Demo
+You can view the live demo here:
