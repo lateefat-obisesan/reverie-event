@@ -79,11 +79,7 @@ a:hover,
     position: absolute;
     top: 110px; 
     right: 120px; 
-<<<<<<< HEAD
     background: rgba(157, 155, 155);
-=======
-    background: rgb(157, 155, 155);
->>>>>>> f3495f4ffa888a336c3aa17189b5fe5c205c7302
     border-radius: 10px;
     padding: 20px ;
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
@@ -202,11 +198,6 @@ a:hover,
     max-width: 100px;
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> f3495f4ffa888a336c3aa17189b5fe5c205c7302
 #services-overview {
     padding: 80px 20px 60px;
     background: transparent;
@@ -545,7 +536,6 @@ a:hover,
     border-color: #ffffff;
 }
 
-<<<<<<< HEAD
 .consult {
     padding: 120px 5%;
     text-align: center;
@@ -589,9 +579,6 @@ a:hover,
     transform: scale(1.05);
 }
 
-=======
-
->>>>>>> f3495f4ffa888a336c3aa17189b5fe5c205c7302
 #contact {
     background: rgba(0,0,0,0.2);
     box-shadow: 0 8px 24px rgba(0,0,0,0.25);
@@ -838,7 +825,6 @@ footer {
     .testimony-card {
         width: calc(50% - 10px);
     }
-<<<<<<< HEAD
     
    footer {
         flex-direction: column;
@@ -849,11 +835,6 @@ footer {
 
     .slogan {
         transform: translateY(0); 
-=======
-
-    footer {
-        gap: 50px;
->>>>>>> f3495f4ffa888a336c3aa17189b5fe5c205c7302
     }
 }
 
@@ -873,7 +854,6 @@ footer {
         justify-content: center;
     }
 
-<<<<<<< HEAD
     #login-modal {
         position: relative; 
         top: 10px;
@@ -934,24 +914,3 @@ footer {
         text-align: center; 
     }
 }
-=======
-    #header-menu a,
-    #login-menu-btn {
-        font-size: 1.6rem;
-    }
-
-    .hero-image-box {
-        width: 95%;
-        height: 300px;
-    }
-
-    .hero-text-bar {
-        width: 80%;
-        padding: 15px;
-    }
-
-    .hero-text-bar h1 {
-        font-size: 16px;
-    }
-}
->>>>>>> f3495f4ffa888a336c3aa17189b5fe5c205c7302
