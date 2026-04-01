@@ -523,6 +523,17 @@ footer {
         text-align: center;
     }
 
+    .footer-top {
+        bottom: 40px;
+        right: 20px;   
+    }
+
+    .footer-top a {
+        background: rgba(92, 76, 110, 0.9);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+
     .slogan {
         transform: translateY(0); 
     }
@@ -594,6 +605,15 @@ footer {
     }
 
     .footer-top {
-        bottom: 30px;
+        position: fixed;
+        bottom: 20px;  
+        right: 10px;   
+        z-index: 100;
+    }
+
+    .footer-top a {
+        width: 45px;   
+        height: 45px;
+        background: rgba(92, 76, 110, 0.8); 
     }
 }
