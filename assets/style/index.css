@@ -12,32 +12,51 @@ body {
     margin-inline: auto;
 }
 
+/* ===== YOUR HEADER (commented to avoid conflict) ===== */
+
 header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    gap: 250px;
-    background-color: transparent; 
+    gap: 20px;
+    background-color: transparent;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+     overflow-x: hidden;
 }
 
 #header-logo {
-    margin-left: 60px;
+    margin-left: 0;
+    max-width: 180px;
+    height: auto;
 }
 
 #header-menu {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 10px;
+   display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-a,
-#login-menu-btn {
+#header-menu a,
+#login-menu-btn{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #e7e6e9;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
+    background-color: transparent;
+    border: none;
+    white-space: nowrap;
 }
 
 a:hover,
@@ -707,12 +726,25 @@ footer {
 
 @media (max-width: 900px) {
     header {
-        gap: 50px; 
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
     }
 
     #header-logo {
-        margin-left: 20px;
+        max-width: 150px;
+    }
+
+    #header-menu {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    #header-menu a,
+    #login-menu-btn {
+        font-size: 1.6rem;
     }
 
     .hero-image-box {
@@ -721,44 +753,57 @@ footer {
     }
 
     .service-grid {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
 
     .service-col:last-child {
-        grid-column: span 2; 
-        justify-self: center; 
+        grid-column: span 2;
+        justify-self: center;
         width: 50%;
     }
 
     .testimony-card {
-        width: calc(50% - 10px); 
+        width: calc(50% - 10px);
     }
-    
+
     footer {
         gap: 50px;
     }
 }
 
-
 @media screen and (max-width: 600px) {
     header {
         flex-direction: column;
-        gap: 15px;
-        padding: 20px 0;
+        gap: 12px;
+        padding: 15px 0;
     }
 
     #header-logo {
-        margin-left: 0;
-        max-width: 130px;
+        max-width: 120px;
     }
 
     #header-menu {
-        gap: 15px;
+        gap: 10px;
         justify-content: center;
     }
 
-    a, #login-menu-btn {
-        font-size: 1.2rem;
+    #header-menu a,
+    #login-menu-btn {
+        font-size: 1.6rem;
+    }
+
+    .hero-image-box {
+        width: 95%;
+        height: 300px;
+    }
+
+    .hero-text-bar {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .hero-text-bar h1 {
+        font-size: 16px;
     }
 }
