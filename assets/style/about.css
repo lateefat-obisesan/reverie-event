@@ -216,11 +216,6 @@
     right: 10px;
 }
 
-.video-btn:hover {
-    background: rgba(80, 80, 80, 0.8);
-}
-
-
 .about-cta {
     padding: 30px 20px 80px 20px;
     text-align: center;
