@@ -12,6 +12,8 @@ body {
     margin-inline: auto;
 }
 
+/* ===== YOUR HEADER (commented to avoid conflict) ===== */
+
 header {
     display: flex;
     justify-content: space-between;
