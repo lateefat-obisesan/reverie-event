@@ -338,15 +338,15 @@ a:hover,
     box-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
 
-.consult h2 {
+.consult h3 {
     font-family: 'Playfair Display';
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #fff;
     margin-bottom: 20px;
 }
 
 .consult p {
-    font-size: 1.6rem;
+    font-size: 1.9rem !important;
     color: #fff;
     max-width: 700px;
     margin: 0 auto 40px;
