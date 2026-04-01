@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let nextBtn = document.querySelector(".next-btn");
     let index = 0;
 
+    let loginBtn = document.getElementById("login-menu-btn");
+    let loginModal = document.getElementById("login-modal");
+
     function showVideo(i) {
         videos.forEach(function(video) {
             video.classList.remove("active");
@@ -25,6 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
         prevBtn.addEventListener("click", function () {
             index = (index - 1 + videos.length) % videos.length;
             showVideo(index);
+        });
+    }
+
+     if (loginBtn && loginModal) {
+        loginBtn.addEventListener("click", function () {
+            loginModal.classList.toggle("hidden");
         });
     }
 });

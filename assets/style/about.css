@@ -28,8 +28,10 @@ header {
 
 #header-menu {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    flex-wrap: nowrap;
     margin-bottom: 10px;
+    justify-content: center;
 }
 
 a,
@@ -37,6 +39,7 @@ a,
     text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
+     white-space: nowrap;
     color: #e7e6e9;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
@@ -62,7 +65,7 @@ a:hover,
     position: absolute;
     top: 110px;
     right: 120px;
-    background: rgba(157, 155, 155, 0.25);
+    background: rgba(157, 155, 155,);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
@@ -118,9 +121,6 @@ main {
     flex: 1;
 }
 
-/* =========================
-   ABOUT BANNER
-   ========================= */
 .about-banner {
     background-image: url("../media/about-banner.jpg");
     background-size: cover;
@@ -131,18 +131,22 @@ main {
     margin-top: 20px;
 }
 
-.story-box {
+ .story-box {
     background: rgba(255, 255, 255, 0.08);
     padding: 35px;
     border-radius: 15px;
-    max-width: 950px;
+    max-width: 900px;
+    width: 90%; 
     margin: 0 auto;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    text-align: center;
 }
 
 .story-box p {
-    max-width: 700px;
-    margin: 0 auto 15 px;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto 15px;
+    line-height: 1.8;
 }
 
 .about-banner-content {
@@ -173,16 +177,19 @@ main {
 }
 
 .about-container {
-    width: min(100% - 30px, 1080px);
+    width: min(100% - 40px, 1100px);
     margin-inline: auto;
     text-align: center;
 }
 
 .about-container h2 {
+     font-family: "Playfair", serif;
     font-size: 2.8rem;
-    margin-bottom: 20px;
+     font-style: italic;   
+    font-weight: 500;
+    margin-bottom: 25px;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    margin-bottom: 10px; 
     color: #fff;
 }
 
@@ -254,11 +261,13 @@ main {
 }
 
 .about-goals h2 {
-    font-size: 2.8rem;
+    font-family: "Playfair", serif;
+    font-size: 3.2rem;
+    font-style: italic;
+    font-weight: 500;
     margin-bottom: 15px;
     letter-spacing: 2px;
 }
-
 .about-goals p {
     font-size: 1.6rem;
     line-height: 1.8;
@@ -272,26 +281,11 @@ main {
     margin: 10px auto 25px;
 }
 
-/* =========================
-   ABOUT IMAGE SECTION
-   ========================= */
 
 .about-image-section {
     padding: 20px 20px 60px 20px;
 }
 
-.about-goals-box {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-}
-
-/* =========================
-   VIDEO SECTION
-   ========================= */
 .about-video {
     padding: 30px 20px 70px 20px;
 }
@@ -299,57 +293,6 @@ main {
     display: flex;
     justify-content: center;
     padding: 60px 20px;
-}
-
-.video-slider {
-    display: flex;
-    justify-content: center;
-    padding: 60px 20px;
-}
-
-.video-box {
-    position: relative;
-    width: 80%;
-    max-width: 900px;
-    height: 500px;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.video-slide {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-}
-
-.video-slide.active {
-    display: block;
-}
-
-.video-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 80px;
-    border: none;
-    background: rgba(80, 80, 80, 0.5);
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-.prev-btn {
-    left: 10px;
-}
-
-.next-btn {
-    right: 10px;
-}
-
-.video-btn:hover {
-    background: rgba(80, 80, 80, 0.8);
 }
 
 .video-box {
@@ -424,40 +367,6 @@ main {
 }
 
 
-
-.footer-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 99;
-}
-
-.footer-top a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    background: #5c4c6e;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.footer-top p {
-    font-size: 1.1rem;
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-.footer-top a:hover {
-    background: #675a70;
-}
-
-
 footer {
     display: flex;
     justify-content: center;
@@ -513,6 +422,41 @@ footer {
     margin-top: 5px;
 }
 
+.footer-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+}
+
+.footer-top a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #5c4c6e;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.footer-top i {
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.footer-top a:hover {
+    background: #7a6a8c;
+    transform: translateY(-5px);
+}
+
+.footer-top a:hover i {
+    transform: scale(1.1);
+}
+
 
 @media (max-width: 1000px) {
     header {
@@ -533,88 +477,34 @@ footer {
     }
 }
 
-.nav-links {
-    display: flex;
-    gap: 15px;
-    flex-wrap: nowrap; 
-}
-
-.nav-links a {
-    white-space: nowrap;
-}
-
-@media (max-width: 768px) {
-    .nav-links a {
-        font-size: 12px; 
-    }
-}
-
-@media (max-width: 900px) {
-    .about-banner-content {
-        width: 85%;
-        padding: 25px 20px;
-    }
-
-    .about-banner-content h1 {
-        font-size: 2.4rem;
-    }
-
-    .about-banner-content p {
-        font-size: 1.4rem;
-    }
-
-    .about-container h2 {
-        font-size: 2.3rem;
-    }
-
-    .about-container p {
-        font-size: 1.4rem;
-    }
-
-    .why-box {
-        width: 100%;
-        max-width: 500px;
-    }
-
-    .about-image {
-        height: 380px;
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        text-align: center;
-    }
-
-    .slogan {
-        transform: translateY(0);
-    }
-}
-
-@media (max-width: 700px) {
+@media screen and (max-width: 900px) {
     header {
-        flex-direction: column;
-        gap: 20px;
-        padding-top: 20px;
+        justify-content: center;
+        gap: 40px;
     }
 
     #header-logo {
         margin-left: 0;
     }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
 
     #header-menu {
+        gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
     }
 
     a,
     #login-menu-btn {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 }
-
 @media (max-width: 600px) {
     .about-banner {
         padding: 90px 15px;
