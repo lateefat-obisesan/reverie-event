@@ -278,20 +278,6 @@
 
 /*  TABLET VIEW (900PX) */
 @media screen and (max-width: 900px) {
-
-    header {
-        gap: 50px; 
-        justify-content: space-around;
-    }
-
-    #header-logo {
-        margin-left: 20px;
-    }
-
-    .hero-overlay h1 {
-        font-size: 3.5rem; 
-    }
-
     .detail-row, 
     .detail-row:nth-child(even) {
         flex-direction: column; 
@@ -315,60 +301,10 @@
     .choose-container {
         flex-direction: column; 
     }
-
-    footer {
-        gap: 50px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-top {
-        bottom: 40px  !important; /* Force it to stay low */
-        right: 20px  !important; 
-        top: auto !important;  
-    }
-
-    .footer-top a {
-        background: rgba(92, 76, 110, 0.9);
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-
-    .slogan {
-        transform: translateY(0); 
-    }
 }
 
 /* MOBILE VIEW (600PX) */
 @media screen and (max-width: 600px) {
-    header {
-        flex-direction: column;
-        gap: 20px;
-        padding-top: 20px;
-    }
-
-    #header-logo {
-        margin-left: 0;
-    }
-
-    #header-menu {
-        gap: 15px;
-    }
-
-    a, #login-menu-btn {
-        font-size: 1.4rem;
-    }
-
-    .hero-overlay h1 {
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-    }
-
-    .hero-overlay p {
-        font-size: 1.4rem;
-    }
-
     .detail-text h2 {
         font-size: 2.4rem;
     }
@@ -396,30 +332,5 @@
     .list-item p,
     .reason-item p {
         font-size: 1.6rem;
-    }
-
-    #login-modal {
-        right: auto;
-        left: 30%; 
-        width: 50%;
-        top: 300px;
-    }
-
-    .footer-top {
-        position: fixed;
-        bottom: 20px;  
-        right: 10px;   
-        z-index: 100;
-    }
-
-    .footer-top a {
-        width: 45px;   
-        height: 45px;
-        background: rgba(92, 76, 110, 0.8); 
-    }
-
-    .footer-top {
-        bottom: 20px;
-        right: 20px;
     }
 }

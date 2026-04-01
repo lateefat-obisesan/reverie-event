@@ -546,39 +546,6 @@
 }
 
 @media (max-width: 900px) {
-    header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        padding: 20px 0;
-    }
-
-    #header-logo {
-        max-width: 150px;
-    }
-
-    #header-menu {
-        justify-content: center;
-        gap: 16px;
-    }
-
-    #header-menu a,
-    #login-menu-btn {
-        font-size: 1.6rem;
-    }
-
-    #login-modal {
-        right: 50%;
-        transform: translateX(50%); 
-        top: 150px;
-    }
-
-    .hero-image-box {
-        width: 90%;
-        height: 400px;
-    }
-
     .service-grid {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
@@ -606,67 +573,9 @@
     .testimony-card {
         width: calc(50% - 10px);
     }
-    
-   footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .slogan {
-        transform: translateY(0); 
-    }
 }
 
 @media screen and (max-width: 600px) {
-    header {
-        flex-direction: column;
-        gap: 12px;
-        padding: 15px 0;
-    }
-
-    #header-logo {
-        max-width: 120px;
-    }
-
-    #header-menu {
-        gap: 10px;
-        justify-content: center;
-    }
-
-    #login-modal {
-        position: relative; 
-        top: 10px;
-        right: auto;
-        transform: none;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    a, #login-menu-btn {
-        font-size: 1.2rem;
-    }
-
-    .hero-text-bar {
-        width: 95%; 
-    }
-
-    .hero-text-bar h1 {
-        font-size: 16px; 
-        white-space: nowrap; 
-    }
-
-    #know-more-btn {
-        display: flex;
-        width: 50%; 
-        max-width: 50% !important; 
-        padding: 20px 0;
-        font-size: 1.6rem; 
-        justify-content: center;
-        margin: 20px 0;
-    }
-
     .gallery img, 
     .testimony-card,
     .service-grid {
