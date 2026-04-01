@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="authors" content="Group-4">
+        <meta name="description" content="Event Planner">
+        <meta name="keywords" content="html, css, web, web development, javascript">
+        <link rel="icon" href="./assets/media/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/style/about.css" media="all">
+        <script src="./assets/scripts/about.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap">
+         <title>Reverie Event Planning</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" id="header-logo" src="./assets/media/reverie-logo-header.png" alt="Reverie's logo">
+            <div class="menu">
+                <nav id="header-menu">
+                    <a href="./index.html">Home</a>
+                    <a href="./services.html">Our Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact Us</a>
+                </nav> 
+            </div>
+            <div id="login">
+                 <button id="login-menu-btn">Log in</button>
+            </div>
+            <div id="login-modal" class="hidden">
+                <form id="login-form">
+                    <label for="user">Username</label>
+                    <input id="user" type="text" required>
+                    <label for="pass">Password</label>
+                    <input id="pass" type="password" required>
+                    <button type="submit">Log in</button>
+                </form>
+            </div>
+        </header>
+    <section class="about-story">
+        <div class="story-box">
+            <h2>Our Story</h2>
+            <p>
+            Our journey began as a shared dream between four friends who were passionate about creativity, events, and bringing people together. 
+            What started as small ideas and planning for fun quickly turned into something bigger.
+            </p>
+
+            <p>
+            We believed that every celebration deserves to feel special, and that belief inspired us to turn our dream into reality.
+             With dedication and teamwork, we started creating events that reflect style, care, and attention to detail.
+            </p>
+
+            <p>
+            Today, Reverie is more than just event planning — it is a reflection of our friendship, creativity, and passion for making every occasion unforgettable.
+            </p>
+        </div>
+    </section>
+    <section class="about-why">
+        <div class="about-container">
+            <h2>Why Choose Us</h2>
+            <div class="why-boxes">
+                <div class="why-box">
+                    <h3> Elegant Event Design</h3>
+                    <p>We create stylish and well-planned events that match your vision.</p>
+                </div>
+
+                <div class="why-box">
+                  <h3> Professional Service</h3> 
+                    <p>Our team is dedicated to providing friendly and reliable support.</p>
+                </div>
+
+                <div class="why-box">
+                  <h3> Memorable Moments</h3>  
+                    <p>We focus on making every celebration enjoyable and unforgettable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-goals">
+    <div class="about-container">
+        <h2>Our Vision</h2>
+        <div class="goals-line"></div>
+        <div class="about-goals-box">
+            <p>
+                Our goal is to create events that feel personal, meaningful, and unforgettable.
+                We focus on creativity, organization, and attention to detail to bring every
+                vision to life.
+            </p>
+            <p>
+                As a team of four friends, we aim to grow together and turn our passion into
+                something that creates lasting memories for others.
+            </p>
+        </div>
+    </div>
+</section>
+    <section class="about-video">
+    <div class="about-container">
+       <h2>Successful Events</h2>
+            <p>
+            We take pride in delivering beautifully organized events from start to finish.
+            Watch how we transform ideas into unforgettable experiences.
+            </p>
+        <section class="video-slider">
+            <div class="video-box">
+                <video class="video-slide active" muted autoplay loop>
+                    <source src="./assets/media/reverie-hero-video.mp4" type="video/mp4">
+                </video>
+            </div>
+            </section>
+        </div>
+    </section>
+    <section class="about-cta">
+        <div class="about-container">
+            <h2>Let Us Create Your Perfect Event</h2>
+            <p>We are here to turn your ideas into unforgettable memories.</p>
+            <a href="index.html#contact" class="about-btn">Contact Us</a>
+        </div>
+    </section>
+   <footer>
+            <div class="footer-top">
+                <a href="#"><p>Back to Top</p> </a>
+            </div>
+            <div class="footer-copy">
+                <p id="photos-by">Photos by  Unsplash &amp; Friends</p>
+                <p class="footer-copy">&copy; <span id="year"></span> All rights reserved.</p>
+            </div>         
+            <div class="slogan">
+                <h2 id="footer-title">Reverie Event Planning</h2>
+                <p class="footer-text">Let your dreams become unforgettable moments </p>
+            </div>
+            <div class="social-media">
+                <h3 id="follow-us">Follow Us</h3>
+                <div id="social-media-btns">
+                    <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>           
+        </footer>
+        </div>
+</body>
+</html>

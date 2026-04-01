@@ -514,7 +514,6 @@ a:hover,
     transform: scale(1.05);
 }
 
-
 /* Contact Us */
 #contact {
     background: rgba(0,0,0,0.2);
@@ -755,47 +754,5 @@ footer {
 
     a, #login-menu-btn {
         font-size: 1.2rem;
-    }
-
-    .hero-image-box {
-        height: 280px;
-        width: 100%;
-    }
-
-    .hero-text-bar {
-        width: 90%;
-        padding: 10px;
-    }
-
-    .hero-text-bar h1 {
-        font-size: 15px;
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr; 
-    }
-
-    .testimony-card {
-        width: 100%; 
-        height: 400px;
-    }
-
-    .contact-info {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .consult h3 {
-        font-size: 2rem;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .slogan {
-        transform: translateY(0);
     }
 }
