@@ -1,6 +1,10 @@
 @charset "utf-8";
 @import"./common.css";
 
+*{
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -9,10 +13,6 @@ header {
     background-color: transparent;
     padding: 20px 40px;
     flex-wrap: wrap;
-}
-
-*{
-    box-sizing: border-box;
 }
 
 body {
@@ -322,6 +322,8 @@ a:hover,
     justify-content: center;
     background-color:  #675a70;
     max-width: 150px;
+    text-decoration: none;
+    color: #f7f7f9;
     border-radius: 50px;
     padding: 10px 25px;
 }
@@ -336,15 +338,15 @@ a:hover,
     box-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
 
-.consult h2 {
+.consult h3 {
     font-family: 'Playfair Display';
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #fff;
     margin-bottom: 20px;
 }
 
 .consult p {
-    font-size: 1.6rem;
+    font-size: 1.9rem !important;
     color: #fff;
     max-width: 700px;
     margin: 0 auto 40px;
