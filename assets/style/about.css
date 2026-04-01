@@ -216,11 +216,6 @@
     right: 10px;
 }
 
-.video-btn:hover {
-    background: rgba(80, 80, 80, 0.8);
-}
-
-
 .about-cta {
     padding: 30px 20px 80px 20px;
     text-align: center;
@@ -248,77 +243,13 @@
 }
 
 
-@media (max-width: 1000px) {
-    header {
-        gap: 80px;
-    }
-
-    footer {
-        gap: 80px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
 
 @media (max-width: 600px) {
     .story-box {
         width: 100%;
         padding: 25px 15px;
     }
-}
 
-@media screen and (max-width: 900px) {
-    header {
-        justify-content: center;
-        gap: 40px;
-    }
-
-    #header-logo {
-        margin-left: 0;
-    }
-
-     footer {
-        gap: 50px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-top {
-        bottom: 40px  !important; /* Force it to stay low */
-        right: 20px  !important; 
-        top: auto !important;  
-    }
-
-    .footer-top a {
-        background: rgba(92, 76, 110, 0.9);
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-
-    .slogan {
-        transform: translateY(0); 
-    }
-}
-
-@media screen and (max-width: 600px) {
-    header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    #header-menu {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    a,
-    #login-menu-btn {
-        font-size: 1.2rem;
-    }
-}
-@media (max-width: 600px) {
     .about-banner {
         padding: 90px 15px;
     }
@@ -355,23 +286,5 @@
     
     .about-image {
         height: 280px;
-    }
-
-     .footer-top {
-        position: fixed;
-        bottom: 20px;  
-        right: 10px;   
-        z-index: 100;
-    }
-
-    .footer-top a {
-        width: 45px;   
-        height: 45px;
-        background: rgba(92, 76, 110, 0.8); 
-    }
-
-    .footer-top {
-        bottom: 20px;
-        right: 20px;
     }
 }
